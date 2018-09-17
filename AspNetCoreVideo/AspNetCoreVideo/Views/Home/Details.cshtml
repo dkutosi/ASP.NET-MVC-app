@@ -1,0 +1,20 @@
+﻿
+@model AspNetCoreVideo.ViewModels.VideoViewModel
+@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>Id: @Model.Id</div>
+<div>Title: @Model.Title</div>
+<div>Genre: @Model.Genre</div>
+
+@Html.ActionLink("Home", "Index")
+
+
+@section footer{
+    <div>This is the Index footer</div>
+}
